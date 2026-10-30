@@ -1,0 +1,38 @@
+# Mire Mare - slice map: region 1 'The Sedge Fen', 4x3 rooms of 16x11 tiles.
+# Tiles: see tiles.txt.  Markers: P player start, W wisp, D toad, A adder (placed on floor).
+# Rooms are separated by '|' columns and '-' rows for readability (stripped by maptool).
+FFFFBFFFRRRRFFFF|RRRRRRRRRRRRRRRR|FFFFFFFFFFFFFFFF|TTTTTTTTTTTTTTTT
+FT          RRFF|R   ~~~  RRr   R|FB   cc   cc  BF|T  k    T    X T
+F  G   ~~~    BF|R  ~~~~~~  r D R|F  ========    F|T   TT     TT  T
+F  SS ~~~~~    F|Rr ~~RR~~~     R|F ==o=o==o===  F|T  T    ~~     T
+FF SS  ~~~      |   ~~RR~~~~     |  =o====o=====  |   T  ~~~~  T  T
+Bt       t      |    ~~~~~~~~    |   o==o===o=o   |      ~~~~     T
+F    FF    m    |  t   ~~~~      |  ====o==o==    |  k  T  ~~  T  T
+Fc  FBBF  W   FF|RR   G  ~~  RRRR|F  =====o===   F|T  TT      TT  T
+Fcc  FF       FF|RRr        rRRRR|F    ======  G F|T    A   k     T
+FFF   t   ccFFFF|RRRRRR    RRRRRR|FB  W         BF|TT  T     T   TT
+FFFFFF    FFFFFF|RRRRRR    RRRRRR|FFFFFFFFFFFFFFFF|TTTTTT    TTTTTT
+-------------------------------------------------------------------
+FFFFFF    FFFFFF|RRRRRR    RRRRRR|FFFFFFFFFFFFFFFF|TTTTTT    TTTTTT
+FBF   t    FFBFF|Rr   t     t  rR|F~~~~~   ~~~~~BF|T    k        TT
+FF   ~~      FFF|R  ccc     cc  R|F~FF~~~ ~~FF~~~F|T  TT   ~~  T  T
+F   ~~~~  mm  BF|R   FF  P   FF R|F~FF~ ~~~ FF ~~F|T  T   ~==~    T
+F  ~~==~~       |    FF       B  |  ~~~~ A ~~~~~  |      ~====~  TT
+Fc ~====~  G    |         t      | ~~ ~~~~~~ ~~~  |   W  ~====~   T
+F   ~~~~        |   ~~~      W   |  ~~~ FF ~~~~~  |      ~~==~~ T T
+FF   ~~    D  FF|R ~~~~~~      rR|F ~~~ FF~~ ~~ BF|TT  k   ~~     T
+FFB          FFF|R  ~~~~~  cc   R|F~~ G ~~~  ~~~~F|T   TT      G  T
+FFFF  t     FFFF|Rr     t      RR|FF~~~~      ~~FF|T     T  T    TT
+FFFFFF    FFFFFF|RRRRRR    RRRRRR|FFFFFF    FFFFFF|TTTTTT    TTTTTT
+-------------------------------------------------------------------
+FFFFFF    FFFFFF|RRRRRR    RRRRRR|FFFFFF    FFFFFF|TTTTTT    TTTTTT
+FB   t      ccBF|R   ~~  t   rRRR|F~~~~      ~~~~F|T  k   TT     TT
+F  ====~~~~    F|R  ~~~~~      RR|F~=====oo=====~F|T    T     T   T
+F ===o===~~  m F|Rr  ~~~  cc   rR|F~===o====o===~F|T  TT   W   k  T
+F ==o=o==~~     |         cc     |  ==o==o==o==o  |      ~~~      T
+F  ===o==   G   |   t  A     t   |  ===o==o==o==  |     ~~~~~ TT  T
+F   ====  D     |    ~~~~        |  ~~========~~  |  T  ~~~       T
+FF    ~~      FF|RR ~~==~~  G  RR|F~~~~~~W~~~~~~~F|T    G  TT  T  T
+FBF  ~~~~   FFFF|RR  ~~~~      RR|F  ~~~~~~~~~ G F|T  T       k   T
+FFFF  t   FFFFFF|RRRr       rRRRR|FB    mm      BF|TT    TTT    TTT
+FFFFFFFFFFFFFFFF|RRRRRRRRRRRRRRRR|FFFFFFFFFFFFFFFF|TTTTTTTTTTTTTTTT

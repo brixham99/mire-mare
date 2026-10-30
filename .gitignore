@@ -1,0 +1,23 @@
+# Spectrum ROM images and third-party snapshots are never committed
+roms/
+*.rom
+*.z80
+*.sna
+*.szx
+*.deb
+# build outputs (only the three release tapes are tracked)
+build/*
+!build/miremare.tap
+!build/miremare_demo.tap
+!build/miremare_sfx.tap
+shots/
+tools/*.so
+__pycache__/
+*.pyc
+packaging/work/
+packaging/out/*.png
+!packaging/out/06_*.png
+packaging/out/MIRE_MARE_packaging_all.pdf
+*.fmf
+*.raw
+.DS_Store
