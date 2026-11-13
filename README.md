@@ -1,5 +1,7 @@
 # MIRE MARE
 
+[![Downloads](https://img.shields.io/github/downloads/brixham99/mire-mare/total)](https://github.com/brixham99/mire-mare/releases) [![Latest release downloads](https://img.shields.io/github/downloads/brixham99/mire-mare/latest/total)](https://github.com/brixham99/mire-mare/releases/latest)
+
 ![Mire Mare screenshot](docs/screenshot.png)
 
 *48K Sinclair ZX Spectrum, 1985 (2026)*
