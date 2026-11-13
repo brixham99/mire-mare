@@ -9,7 +9,7 @@ normal-mode game fits in memory.  Packed format (engine/demo.asm):
     $FE         continue at $5B00 (part B, copied there at start-up)
     $FF         end: input 0 from then on
 Part A goes in the code (build/stream.asm); part B (build/stream_b.asm) is
-assembled after code_end and moved to $5B00-$5FFF before the font is built.
+assembled after code_end and moved to $5B00-$5FFF at start-up.
 Usage: pack_stream.py [in.asm] [capacity_A]  (default capacity from build/miremare_live.sym)"""
 import os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -53,9 +53,9 @@ def encode(items):
 def main():
     src = sys.argv[1] if len(sys.argv) > 1 else B('demo_stream.asm')
     if len(sys.argv) > 2: cap = int(sys.argv[2])
-    else:   # part A ends at code_end; font + creature cache (3840 bytes) must end by $E000
+    else:   # part A ends at code_end; the creature cache (3072 bytes) must end by $E000
         sym = dict(l.split()[0:3:2] for l in open(B('miremare_live.sym')) if 'EQU' in l)
-        cap = 0xE000 - 3840 - int(sym['demo_data'].rstrip('H'), 16)
+        cap = 0xE000 - 3072 - int(sym['demo_data'].rstrip('H'), 16)
     items = parse(src)
     table, groups = encode(items)
     a, b = list(table), []

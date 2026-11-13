@@ -84,24 +84,6 @@ attr_addr:
         ld l,a
         ret
 
-; font_init: build a bold 8x8 font from the ROM character set (Ultimate-style
-; chunky lettering stand-in until the custom font is drawn).
-font_init:
-        ld hl,$3D00
-        ld de,font
-        ld bc,768
-fi_1:   ld a,(hl)
-        srl a
-        or (hl)
-        ld (de),a
-        inc hl
-        inc de
-        dec bc
-        ld a,b
-        or c
-        jr nz,fi_1
-        ret
-
 ; glyph_ptr: A = char -> HL = 8 bytes of glyph.  128+ = UDGs.
 glyph_ptr:
         cp 128

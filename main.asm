@@ -8,14 +8,13 @@ start:  di
         ld sp,STACK_TOP
         IF DEMO
         ld hl,code_end          ; part B of the demo stream -> $5B00 (the
-        ld de,$5B00             ; font is built over it next)
+        ld de,$5B00             ; creature cache is built over it later)
         ld bc,demo_b_end-code_end+1
         ldir
         ENDIF
         xor a
         out ($FE),a
         call int_init
-        call font_init
         ei
         IF SFXTEST
         jp jukebox
@@ -46,6 +45,7 @@ dbg_room: DEFB 0
         INCLUDE "data/regions.asm"
         INCLUDE "data/tiles.asm"
         INCLUDE "data/udg.asm"
+        INCLUDE "data/font.asm"
         INCLUDE "data/tune.asm"
         INCLUDE "data/sprites.asm"
         INCLUDE "engine/int.asm"
@@ -77,6 +77,6 @@ code_end:
         INCLUDE "build/stream_b.asm"
         ENDIF
 demo_b_end:
-font        EQU code_end            ; 768 bytes, built at start-up
-cache_mem   EQU font+768            ; 3072 bytes of pre-shifted creatures
+font        EQU font8               ; the game's own 8x8 font (data/font.asm)
+cache_mem   EQU code_end            ; 3072 bytes of pre-shifted creatures
 end_all     EQU cache_mem+3072

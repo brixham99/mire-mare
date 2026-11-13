@@ -13,6 +13,7 @@ mkdir -p build shots
 python3 tools/gfx.py
 python3 tools/world.py
 python3 tools/messages.py
+python3 tools/font8.py
 python3 tools/mkscr.py
 [ -f build/demo_stream.asm ] || echo '        DEFB $FE' > build/demo_stream.asm
 asm() {   # $1 = DEMO flag, $2 = output stem, $3 = input stream file (DEMO)

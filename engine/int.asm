@@ -1,6 +1,6 @@
 ; ---------------------------------------------------------------- int.asm
-; IM2 frame interrupt: just counts frames.  The ROM is not used at all after
-; start-up except for reading its character set (font_init).
+; IM2 frame interrupt: just counts frames.  The ROM is not used at all (the
+; game carries its own font, data/font.asm).
 int_init:
         ld hl,VEC_TABLE
         ld de,VEC_TABLE+1

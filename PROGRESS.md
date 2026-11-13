@@ -93,3 +93,12 @@ Plan: (1) night hags (2) boggart clods (3) night wisps faster (4) 100% scroll (5
 - Dawn/"diff" frames: Fuse shows the headless screen of the adjacent frame or a split at a raster row (tearing while a
   sprite/dawn repaint is drawn as the beam passes). Game state stays in lockstep (every later checkpoint identical). Not a bug.
 - 16:20 Fuse god-mode run re-recorded (155 s, sound): 31/33 checkpoints pixel-identical, other 2 = adjacent-frame/tearing; audio 0 clipped, 0 lone clicks.
+
+## 2026-11-13 10:40 (Europe/London) - own 8x8 font
+- The game no longer builds its font from the ROM at $3D00 (font_init removed). It carries a clean-room 8x8 font,
+  96 glyphs in 768 bytes (art/font8.txt -> tools/font8.py -> data/font.asm), drawn in an Ultimate-style chunky hand.
+  Checked against the Sinclair set: no glyph matches it or its bolded form, apart from space and full stop.
+- Code grows by 743 bytes (768 font - 25 font_init). The 768-byte font buffer is gone, so end_all is unchanged ($D3F9).
+- Tapes rebuilt (miremare, miremare_demo, miremare_sfx). ./build.sh: 69/69 tests pass, bot REPLAY OK.
+- Fuse: the menu reads correctly on the 48K ROM (traps on) and on OpticOS (traps off, real tape signal).
+
