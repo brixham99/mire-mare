@@ -15,7 +15,7 @@
 
 ![Gameplay (Fuse recording)](media/fuse_demo_run.gif)
 
-*The screenshots are from the Fuse emulator. The full 155-second run with sound is in [`media/fuse_demo.mp4`](media/fuse_demo.mp4).*
+*The screenshots are from the Fuse emulator. The full 143-second run with sound is in [`media/fuse_demo.mp4`](media/fuse_demo.mp4).*
 
 ## The game
 
