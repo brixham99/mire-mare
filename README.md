@@ -1,5 +1,7 @@
 # MIRE MARE
 
+![Mire Mare screenshot](docs/screenshot.png)
+
 *48K Sinclair ZX Spectrum, 1985 (2026)*
 
 **Mire Mare** was the fourth Sabreman game, promised on the last screen of *Underwurlde* and never released by Ultimate Play the Game. This repository imagines that it was finished on schedule. It's a complete, original 48K ZX Spectrum game written from scratch in Z80 assembly as a **fan homage** in the style of 1984–85 Ultimate, together with a black "big box" release package: box, inlay, tape labels, advert and poster.
